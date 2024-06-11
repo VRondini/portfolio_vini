@@ -33,6 +33,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/dark-mode-main.css" rel="stylesheet">
+
+  <!-- JS Files -->
+  <script src="assets/js/languages.js"></script>
 </head>
 
 <body class="index-page">
@@ -51,12 +54,12 @@
             <input type="checkbox" id="darkModeToggle">
             <span class="slider round"></span>
           </label>
-          <span class="title-theme-button">Switch Dark Mode</span>
+          <span id="switch-theme-button-id" class="title-theme-button"></span>
           <script src="assets/js/darkmode.js"></script>
-          <li><a href="#hero" class="">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="dropdown"><a href="#chefs"><span>Projects</span> <i
+          <li><a id="nav-home-button" href="#hero" class="">Home<br></a></li>
+          <li><a id="nav-about-button" href="#about">About</a></li>
+          <li><a id="nav-contact-button" href="#contact">Contact</a></li>
+          <li class="dropdown"><a id="nav-projects-button" href="#chefs"><span>Projects</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#chefs">Project 1</a></li>
@@ -67,12 +70,13 @@
               <li><a href="#chefs">Project 6</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Languages</span> <i
-            class="bi bi-chevron-down toggle-dropdown"></i></a>
-        <ul>
-          <li><a href="#chefs">Project 1</a></li>
-        </ul>
-      </li>
+          <li class="dropdown"><a id="nav-languages-button" href="#"><span>Languages</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a><button id="language-button-id" class="language-button-class" onclick="switchLanguage()">Change
+                    Language</button></a></li>
+            </ul>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -87,7 +91,8 @@
       <div class="container">
         <div class="row gy-4 justify-content-center justify-content-lg-between">
           <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up" class="colored-text">Hi,<br>I'm Vinicius Rondini Ferreira</h1>
+            <h1 data-aos="fade-up" class="colored-text" id="presentation-greeting">Hi,<br id="presentation-name">I'm
+              Vinicius Rondini Ferreira</h1>
             <p data-aos="fade-up" data-aos-delay="100">
               A <span class="colored-text">Frontend developer</span>. I help turning people’s <span
                 class="colored-text">ideas</span>

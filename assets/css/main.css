@@ -1420,6 +1420,19 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-.title-theme-button{
+.title-theme-button {
   padding: 10px;
+}
+
+.language-button-class {
+  font-size: 15px;
+  text-transform: none;
+  color: var(--nav-dropdown-color);
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.language-button-class:hover {
+  color: var(--nav-dropdown-hover-color);
+  transition: all 0.3s ease-in-out 0s;
 }
