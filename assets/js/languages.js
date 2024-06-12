@@ -32,6 +32,33 @@ const texts = {
 
         technologiesTitle: "TECNOLOGIAS",
         skillsTitle: "Conhecimentos",
+
+        bannerClients: "Clientes",
+        bannerProjects: "Projetos",
+        bannerHours: "Horas De Projetos",
+        bannerWorkers: "Colaboradores",
+
+        projectsTitle: "Projetos",
+        myColoredTextTitle: "Meus",
+        personalProjectsTitle: "Projetos Pessoais",
+        project1Title: "Projeto 1",
+        project2Title: "Projeto 2",
+        project3Title: "Projeto 3",
+        project4Title: "Projeto 4",
+        project5Title: "Projeto 5",
+        project6Title: "Projeto 6",
+        projectPlaceholder: "Grande projeto em construção! Pegue um café e relaxe...",
+
+        contactsTitle: "CONTATO",
+        wannaTalkToMe: "Quer Falar Comigo?",
+        contactOptionsBelow: "Opções Abaixo!",
+        addressTitle: "Endereço",
+        addressText: "Rua Ângela Russo Tafner, Campinas, SP - Brazil",
+        callMeText: "Me Ligue!",
+        emailMeText: "Me Mande Um E-mail!",
+        connectLinkedingText: "Vamos Nos Conectar No LinkedIn!",
+
+        socialMediaTitle: "Redes Sociais",
     },
     en: {
         navHomeButton: "Home",
@@ -66,6 +93,33 @@ const texts = {
 
         technologiesTitle: "TECHNOLOGIES",
         skillsTitle: "Skills",
+
+        bannerClients: "Clients",
+        bannerProjects: "Projects",
+        bannerHours: "Hours Of Projects",
+        bannerWorkers: "Workers",
+
+        projectsTitle: "Projects",
+        myColoredTextTitle: "My",
+        personalProjectsTitle: "Personal Projects",
+        project1Title: "Project 1",
+        project2Title: "Project 2",
+        project3Title: "Project 3",
+        project4Title: "Project 4",
+        project5Title: "Project 5",
+        project6Title: "Project 6",
+        projectPlaceholder: "Great project under construction! Grab a coffee and stay comfy...",
+
+        contactsTitle: "CONTACT",
+        wannaTalkToMe: "Wanna talk to me?",
+        contactOptionsBelow: "Options Below!",
+        addressTitle: "Address",
+        addressText: "Ângela Russo Tafner Street, Campinas, SP - Brazil",
+        callMeText: "Call Me!",
+        emailMeText: "Email Me!",
+        connectLinkedingText: "Let's Connect on LinkedIn!",
+
+        socialMediaTitle: "Social Media",
     }
 };
 
@@ -110,6 +164,42 @@ function switchLanguageEnglish() {
     //Skills Session
     document.getElementById('technologies-title-id').textContent = texts[currentLang].technologiesTitle;
     document.getElementById('skills-title-id').textContent = texts[currentLang].skillsTitle;
+
+    //Banner Session
+    document.getElementById('banner-clients').textContent = texts[currentLang].bannerClients;
+    document.getElementById('banner-projects').textContent = texts[currentLang].bannerProjects;
+    document.getElementById('banner-hours').textContent = texts[currentLang].bannerHours;
+    document.getElementById('banner-workers').textContent = texts[currentLang].bannerWorkers;
+
+    //Projects Session
+    document.getElementById('projects-title-id').textContent = texts[currentLang].projectsTitle;
+    document.getElementById('my-coloredtext-title-id').textContent = texts[currentLang].myColoredTextTitle;
+    document.getElementById('personal-projects-title-id').textContent = texts[currentLang].personalProjectsTitle;
+    document.getElementById('project1-title').textContent = texts[currentLang].project1Title;
+    document.getElementById('project2-title').textContent = texts[currentLang].project2Title;
+    document.getElementById('project3-title').textContent = texts[currentLang].project3Title;
+    document.getElementById('project4-title').textContent = texts[currentLang].project4Title;
+    document.getElementById('project5-title').textContent = texts[currentLang].project5Title;
+    document.getElementById('project6-title').textContent = texts[currentLang].project6Title;
+    document.getElementById('project-placeholder').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder2').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder3').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder4').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder5').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder6').textContent = texts[currentLang].projectPlaceholder;
+
+    //Contacts Session
+    document.getElementById('contact-title-id').textContent = texts[currentLang].contactsTitle;
+    document.getElementById('wanna-talk-to-me-id').textContent = texts[currentLang].wannaTalkToMe;
+    document.getElementById('options-below-id').textContent = texts[currentLang].contactOptionsBelow;
+    document.getElementById('address-id').textContent = texts[currentLang].addressTitle;
+    document.getElementById('address-text').textContent = texts[currentLang].addressText;
+    document.getElementById('callme-id').textContent = texts[currentLang].callMeText;
+    document.getElementById('emailme-id').textContent = texts[currentLang].emailMeText;
+    document.getElementById('connect-linkedin-id').textContent = texts[currentLang].connectLinkedingText;
+
+    //Footer Session
+    document.getElementById('social-media-id').textContent = texts[currentLang].socialMediaTitle;
 }
 
 function switchLanguagePortuguese() {
@@ -151,4 +241,39 @@ function switchLanguagePortuguese() {
     document.getElementById('technologies-title-id').textContent = texts[currentLang].technologiesTitle;
     document.getElementById('skills-title-id').textContent = texts[currentLang].skillsTitle;
 
+    //Banner Session
+    document.getElementById('banner-clients').textContent = texts[currentLang].bannerClients;
+    document.getElementById('banner-projects').textContent = texts[currentLang].bannerProjects;
+    document.getElementById('banner-hours').textContent = texts[currentLang].bannerHours;
+    document.getElementById('banner-workers').textContent = texts[currentLang].bannerWorkers;
+
+    //Projects Session
+    document.getElementById('projects-title-id').textContent = texts[currentLang].projectsTitle;
+    document.getElementById('my-coloredtext-title-id').textContent = texts[currentLang].myColoredTextTitle;
+    document.getElementById('personal-projects-title-id').textContent = texts[currentLang].personalProjectsTitle;
+    document.getElementById('project1-title').textContent = texts[currentLang].project1Title;
+    document.getElementById('project2-title').textContent = texts[currentLang].project2Title;
+    document.getElementById('project3-title').textContent = texts[currentLang].project3Title;
+    document.getElementById('project4-title').textContent = texts[currentLang].project4Title;
+    document.getElementById('project5-title').textContent = texts[currentLang].project5Title;
+    document.getElementById('project6-title').textContent = texts[currentLang].project6Title;
+    document.getElementById('project-placeholder').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder2').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder3').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder4').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder5').textContent = texts[currentLang].projectPlaceholder;
+    document.getElementById('project-placeholder6').textContent = texts[currentLang].projectPlaceholder;
+
+    //Contacts Session
+    document.getElementById('contact-title-id').textContent = texts[currentLang].contactsTitle;
+    document.getElementById('wanna-talk-to-me-id').textContent = texts[currentLang].wannaTalkToMe;
+    document.getElementById('options-below-id').textContent = texts[currentLang].contactOptionsBelow;
+    document.getElementById('address-id').textContent = texts[currentLang].addressTitle;
+    document.getElementById('address-text').textContent = texts[currentLang].addressText;
+    document.getElementById('callme-id').textContent = texts[currentLang].callMeText;
+    document.getElementById('emailme-id').textContent = texts[currentLang].emailMeText;
+    document.getElementById('connect-linkedin-id').textContent = texts[currentLang].connectLinkedingText;
+
+    //Footer Session
+    document.getElementById('social-media-id').textContent = texts[currentLang].socialMediaTitle;
 }
