@@ -1436,3 +1436,28 @@ input:checked+.slider:before {
   color: var(--nav-dropdown-hover-color);
   transition: all 0.3s ease-in-out 0s;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 50px;
+  color: var(--accent-color);
+}
+
+.carousel-control-prev {
+  left: -50px;
+}
+
+.carousel-control-next {
+  right: -50px;
+}
