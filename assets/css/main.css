@@ -892,6 +892,7 @@ section,
 --------------------------------------------------------------*/
 .why-us {
   --background-color: color-mix(in srgb, var(--default-color), transparent 94%);
+  margin-bottom: 5%;
 }
 
 .skills-icons {
@@ -1122,9 +1123,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Chefs Section
+# skills Section
 --------------------------------------------------------------*/
-.chefs .team-member {
+.skills .team-member {
   box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 92%);
   overflow: hidden;
   text-align: center;
@@ -1132,12 +1133,12 @@ section,
   transition: 0.3s;
 }
 
-.chefs .team-member .member-img {
+.skills .team-member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.chefs .team-member .member-img:after {
+.skills .team-member .member-img:after {
   position: absolute;
   content: "";
   left: -1px;
@@ -1149,7 +1150,7 @@ section,
   z-index: 1;
 }
 
-.chefs .team-member .social {
+.skills .team-member .social {
   position: absolute;
   right: -100%;
   top: 30px;
@@ -1160,7 +1161,7 @@ section,
   z-index: 2;
 }
 
-.chefs .team-member .social a {
+.skills .team-member .social a {
   transition: color 0.3s;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   margin: 15px 12px;
@@ -1169,33 +1170,33 @@ section,
   text-align: center;
 }
 
-.chefs .team-member .social a:hover {
+.skills .team-member .social a:hover {
   color: var(--default-color);
 }
 
-.chefs .team-member .social i {
+.skills .team-member .social i {
   font-size: 18px;
 }
 
-.chefs .team-member .member-info {
+.skills .team-member .member-info {
   padding: 10px 15px 20px 15px;
 }
 
-.chefs .team-member .member-info h4 {
+.skills .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   font-family: var(--default-font);
 }
 
-.chefs .team-member .member-info span {
+.skills .team-member .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
-.chefs .team-member .member-info p {
+.skills .team-member .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
@@ -1203,12 +1204,12 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.chefs .team-member:hover {
+.skills .team-member:hover {
   transform: scale(1.08);
   box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.chefs .team-member:hover .social {
+.skills .team-member:hover .social {
   right: 8px;
   opacity: 1;
 }
@@ -1446,6 +1447,10 @@ input:checked+.slider:before {
   height: auto;
   background-color: transparent;
   border: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .carousel-control-prev i,
@@ -1460,4 +1465,42 @@ input:checked+.slider:before {
 
 .carousel-control-next {
   right: -50px;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -60px;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  background-color: var(--nav-color);
+  /* Cor dos indicadores inativos */
+}
+
+.carousel-indicators .active {
+  background-color: var(--accent-color);
+  /* Cor do indicador ativo */
+}
+
+carousel-item {
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+/* Define a opacidade inicial dos slides */
+.carousel-item:not(.active) {
+  opacity: 0;
+}
+
+/* Move o slide para fora da tela quando não estiver ativo */
+.carousel-item:not(.active) {
+  transform: translateX(100%);
 }

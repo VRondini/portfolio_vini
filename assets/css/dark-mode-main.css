@@ -625,9 +625,9 @@
 }
 
 /*--------------------------------------------------------------
-# Dark Mode Chefs Section
+# Dark Mode skills Section
 --------------------------------------------------------------*/
-.dark-mode .chefs .team-member {
+.dark-mode .skills .team-member {
     box-shadow: 0px 0 30px color-mix(in srgb, var(--accent-color), transparent 80%);
     overflow: hidden;
     text-align: center;
@@ -635,7 +635,7 @@
     transition: 0.3s;
 }
 
-.dark-mode .chefs .team-member .member-img:after {
+.dark-mode .skills .team-member .member-img:after {
     position: absolute;
     content: "";
     left: -1px;
@@ -647,7 +647,7 @@
     z-index: 1;
 }
 
-.dark-mode .chefs .team-member .social {
+.dark-mode .skills .team-member .social {
     position: absolute;
     right: -100%;
     top: 30px;
@@ -658,7 +658,7 @@
     z-index: 2;
 }
 
-.dark-mode .chefs .team-member .social a {
+.dark-mode .skills .team-member .social a {
     transition: color 0.3s;
     color: color-mix(in srgb, var(--background-color), transparent 50%);
     margin: 15px 12px;
@@ -667,22 +667,22 @@
     text-align: center;
 }
 
-.dark-mode .chefs .team-member .social a:hover {
+.dark-mode .skills .team-member .social a:hover {
     color: var(--background-color);
 }
 
-.chefs .team-member .member-info {
+.skills .team-member .member-info {
     padding: 10px 15px 20px 15px;
 }
 
-.dark-mode .chefs .team-member .member-info span {
+.dark-mode .skills .team-member .member-info span {
     display: block;
     font-size: 14px;
     font-weight: 400;
     color: color-mix(in srgb, var(--background-color), transparent 50%);
 }
 
-.dark-mode .chefs .team-member .member-info p {
+.dark-mode .skills .team-member .member-info p {
     font-style: italic;
     font-size: 14px;
     padding-top: 15px;
@@ -690,12 +690,12 @@
     color: color-mix(in srgb, var(--background-color), transparent 30%);
 }
 
-.dark-mode .chefs .team-member:hover {
+.dark-mode .skills .team-member:hover {
     transform: scale(1.08);
     box-shadow: 0px 0 30px color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-.chefs .team-member:hover .social {
+.skills .team-member:hover .social {
     right: 8px;
     opacity: 1;
 }
@@ -761,4 +761,17 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+.dark-mode .language-button-class {
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-background-color);
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.dark-mode .language-button-class:hover {
+    color: var(--accent-color);
+    transition: all 0.3s ease-in-out 0s;
 }

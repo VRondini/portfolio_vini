@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -62,24 +63,40 @@
           <li><a id="nav-home-button" href="#hero" class="">Home<br></a></li>
           <li><a id="nav-about-button" href="#about">About</a></li>
           <li><a id="nav-contact-button" href="#contact">Contact</a></li>
-          <li class="dropdown"><a id="nav-projects-button" href="#chefs"><span>Projects</span> <i
+          <li class="dropdown"><a href="#skills"><span id="nav-projects-button">Projects</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#chefs">Project 1</a></li>
-              <li><a href="#chefs">Project 2</a></li>
-              <li><a href="#chefs">Project 3</a></li>
-              <li><a href="#chefs">Project 4</a></li>
-              <li><a href="#chefs">Project 5</a></li>
-              <li><a href="#chefs">Project 6</a></li>
+              <li><a id="dropdown-project-1" href="#skills">Project 1</a></li>
+              <li><a id="dropdown-project-2" href="#skills">Project 2</a></li>
+              <li><a id="dropdown-project-3" href="#skills">Project 3</a></li>
+              <li><a id="dropdown-project-4" href="#skills">Project 4</a></li>
+              <li><a id="dropdown-project-5" href="#skills">Project 5</a></li>
+              <li><a id="dropdown-project-6" href="#skills">Project 6</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a id="nav-languages-button" href="#"><span>Languages</span> <i
+          <li class="dropdown">
+            <a href="#"><span id="nav-languages-button">Languages</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a><button id="language-button-id" class="language-button-class" onclick="switchLanguage()">Change
-                    Language</button></a></li>
+              <li>
+                <a>
+                  <div class="language-option" onclick="switchLanguageEnglish()">
+                    <span class="fi fi-gb"></span>
+                    <span id="language-english-button-id" class="language-text">English</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <div class="language-option" onclick="switchLanguagePortuguese()">
+                    <span class="fi fi-br"></span>
+                    <span id="language-portuguese-button-id" class="language-text">Portuguese</span>
+                  </div>
+                </a>
+              </li>
             </ul>
           </li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -97,9 +114,11 @@
             <h1 data-aos="fade-up" class="colored-text" id="presentation-greeting">Hi,</h1>
             <h1 data-aos="fade-up" class="colored-text" id="presentation-name">I'm Vinicius Rondini!</h1>
             <p data-aos="fade-up" data-aos-delay="100">
-              A <span class="colored-text">Frontend developer</span>. I help turning people’s <span
-                class="colored-text">ideas</span>
-              into a fancy website.
+              <span id="presentation-text-1">A </span>
+              <span id="presentation-text-2" class="colored-text">Frontend developer.</span>
+              <span id="presentation-text-3">I help turning people’s </span>
+              <span id="presentation-text-4" class="colored-text">ideas</span>
+              <span id="presentation-text-5"> into a fancy website.</span>
             </p>
           </div>
           <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
@@ -115,8 +134,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Me<br></h2>
-        <p><span>Who Am I?</span> <span class="description-title">Compact Version</span></p>
+        <h2 id="about-me-title-id">About Me<br></h2>
+        <p><span id="who-am-i-id">Who Am I?</span> <span id="compact-version-id" class="description-title">Compact
+            Version</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -133,12 +153,15 @@
                 websites.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Bachelor of Technology in Systems Analysis and
+                <li><i class="bi bi-check-circle-fill"></i> <span id="university-graduation-id">Bachelor of Technology
+                    in Systems Analysis and
                     Development from the
                     Instituto Federal de São Paulo (IFSP) - 2023;</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Graduate of EEBP Fundação Bradesco high school -
+                <li><i class="bi bi-check-circle-fill"></i> <span id="school-graduation-id">Graduate of EEBP Fundação
+                    Bradesco high school -
                     2018;</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>System analyst at DPaschoal.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span id="current-job-id">System analyst at
+                    DPaschoal.</span></li>
               </ul>
               <div class="position-relative mt-4">
               </div>
@@ -153,11 +176,11 @@
     <section id="why-us" class="why-us section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Technologies<br></h2>
-        <p><span class="description-title">Skills</span></p>
+        <h2 id="technologies-title-id">Technologies<br></h2>
+        <p><span id="skills-title-id" class="description-title">Skills</span></p>
       </div><!-- End Section Title -->
       <div class="container position-relative">
-        <div id="skillsCarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
+        <div id="skillsCarousel" class="carousel slide" data-ride="carousel" data-interval="12000">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row gy-4">
@@ -226,8 +249,14 @@
                   </div><!-- End Icon Box -->
                   <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                      <i class="devicon-csharp-plain"></i>
-                      <h4>C#</h4>
+                      <i class="devicon-jira-plain"></i>
+                      <h4>Jira</h4>
+                    </div>
+                  </div><!-- End Icon Box -->
+                  <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                      <i class="devicon-git-plain"></i>
+                      <h4>Git</h4>
                     </div>
                   </div><!-- End Icon Box -->
                   <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
@@ -238,14 +267,8 @@
                   </div><!-- End Icon Box -->
                   <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                      <i class="devicon-jira-plain"></i>
-                      <h4>Jira</h4>
-                    </div>
-                  </div><!-- End Icon Box -->
-                  <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                      <i class="devicon-git-plain"></i>
-                      <h4>Git</h4>
+                      <i class="devicon-csharp-plain"></i>
+                      <h4>C#</h4>
                     </div>
                   </div><!-- End Icon Box -->
                   <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
@@ -270,6 +293,10 @@
               </div>
             </div>
           </div>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
         </div>
         <a class="carousel-control-prev" href="#skillsCarousel" role="button" data-slide="prev">
           <i class="bi bi-caret-left-fill" aria-hidden="true"></i>
@@ -331,8 +358,8 @@
 
     </section><!-- /Stats Section -->
 
-    <!-- Chefs Section -->
-    <section id="chefs" class="chefs section">
+    <!-- skills Section -->
+    <section id="skills" class="skills section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -358,11 +385,10 @@
               <div id="project_1" class="member-info">
                 <h4>Project 1</h4>
                 <span>B2C</span>
-                <p>The first project consists on the development of a B2C platform. The website is a marketplace where
-                  companies can create their pages to publish their products.</p>
+                <p>Great project under construction! Grab a coffee and stay comfy...</p>
               </div>
             </div>
-          </div><!-- End Chef Team Member -->
+          </div>
 
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
@@ -380,7 +406,7 @@
                 <p>Great project under construction! Grab a coffee and stay comfy...</p>
               </div>
             </div>
-          </div><!-- End Chef Team Member -->
+          </div>
 
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
@@ -398,7 +424,7 @@
                 <p>Great project under construction! Grab a coffee and stay comfy...</p>
               </div>
             </div>
-          </div><!-- End Chef Team Member -->
+          </div>
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
@@ -415,8 +441,7 @@
                 <p>Great project under construction! Grab a coffee and stay comfy...</p>
               </div>
             </div>
-          </div><!-- End Chef Team Member -->
-
+          </div>
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
@@ -433,8 +458,7 @@
                 <p>Great project under construction! Grab a coffee and stay comfy...</p>
               </div>
             </div>
-          </div><!-- End Chef Team Member -->
-
+          </div>
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
@@ -451,13 +475,13 @@
                 <p>Great project under construction! Grab a coffee and stay comfy...</p>
               </div>
             </div>
-          </div><!-- End Chef Team Member -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Chefs Section -->
+    </section><!-- /skills Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
