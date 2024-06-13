@@ -20,7 +20,7 @@ const texts = {
         presentationText2: "Desenvolvedor Frontend.",
         presentationText3: "Ajudo pessoas a tornar suas",
         presentationText4: "ideias",
-        presentationText5: "em lindos websites.",
+        presentationText5: "em belos websites.",
 
         aboutMePageTitle: "Sobre Mim",
         whoAmI: "Quem sou eu?",
