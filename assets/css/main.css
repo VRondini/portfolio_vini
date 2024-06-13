@@ -1201,6 +1201,7 @@ section,
   padding-top: 15px;
   line-height: 26px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-family: 'cursive';
 }
 
 .projects .team-member:hover {
