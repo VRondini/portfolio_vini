@@ -890,7 +890,7 @@ section,
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
-.why-us {
+.skills {
   --background-color: color-mix(in srgb, var(--default-color), transparent 94%);
 }
 
@@ -924,19 +924,19 @@ section,
   }
 }
 
-.why-us .why-box .more-btn:hover {
+.skills .why-box .more-btn:hover {
   color: var(--accent-color);
   background: var(--contrast-color);
 }
 
-.why-us .icon-box {
+.skills .icon-box {
   background-color: var(--contrast-color);
   text-align: center;
   padding: 40px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.why-us .icon-box i {
+.skills .icon-box i {
   color: var(--accent-color);
   font-size: 48px;
   margin-bottom: 30px;
@@ -950,19 +950,19 @@ section,
   transition: 0.3s;
 }
 
-.why-us .icon-box h4 {
+.skills .icon-box h4 {
   font-size: 20px;
   font-weight: 500;
   margin: 0 0 30px 0;
   font-family: var(--default-font);
 }
 
-.why-us .icon-box p {
+.skills .icon-box p {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.why-us .icon-box:hover i {
+.skills .icon-box:hover i {
   color: var(--contrast-color);
   background: var(--accent-color);
 }
@@ -1122,9 +1122,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Chefs Section
+# projects Section
 --------------------------------------------------------------*/
-.chefs .team-member {
+.projects .team-member {
   box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 92%);
   overflow: hidden;
   text-align: center;
@@ -1132,12 +1132,12 @@ section,
   transition: 0.3s;
 }
 
-.chefs .team-member .member-img {
+.projects .team-member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.chefs .team-member .member-img:after {
+.projects .team-member .member-img:after {
   position: absolute;
   content: "";
   left: -1px;
@@ -1149,7 +1149,7 @@ section,
   z-index: 1;
 }
 
-.chefs .team-member .social {
+.projects .team-member .social {
   position: absolute;
   right: -100%;
   top: 30px;
@@ -1160,7 +1160,7 @@ section,
   z-index: 2;
 }
 
-.chefs .team-member .social a {
+.projects .team-member .social a {
   transition: color 0.3s;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   margin: 15px 12px;
@@ -1169,33 +1169,33 @@ section,
   text-align: center;
 }
 
-.chefs .team-member .social a:hover {
+.projects .team-member .social a:hover {
   color: var(--default-color);
 }
 
-.chefs .team-member .social i {
+.projects .team-member .social i {
   font-size: 18px;
 }
 
-.chefs .team-member .member-info {
+.projects .team-member .member-info {
   padding: 10px 15px 20px 15px;
 }
 
-.chefs .team-member .member-info h4 {
+.projects .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   font-family: var(--default-font);
 }
 
-.chefs .team-member .member-info span {
+.projects .team-member .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
-.chefs .team-member .member-info p {
+.projects .team-member .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
@@ -1203,12 +1203,12 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.chefs .team-member:hover {
+.projects .team-member:hover {
   transform: scale(1.08);
   box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.chefs .team-member:hover .social {
+.projects .team-member:hover .social {
   right: 8px;
   opacity: 1;
 }
@@ -1286,7 +1286,6 @@ section,
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
   border-radius: 50%;
   margin-right: 15px;
 }
