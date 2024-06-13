@@ -1460,3 +1460,29 @@ input:checked+.slider:before {
 .carousel-control-next {
   right: -50px;
 }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -50px;
+  left: 35%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  background-color: var(--nav-color);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: var(--accent-color);
+}
