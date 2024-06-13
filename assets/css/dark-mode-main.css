@@ -576,23 +576,23 @@
 /*--------------------------------------------------------------
 # Dark Mode Section Skills
 --------------------------------------------------------------*/
-.dark-mode .why-us {
+.dark-mode .skills {
     background-color: var(--dark-mode-contrast-color);
 }
 
-.dark-mode .why-us .why-box .more-btn:hover {
+.dark-mode .skills .why-box .more-btn:hover {
     color: var(--accent-color);
     background: var(--default-color);
 }
 
-.dark-mode .why-us .icon-box {
+.dark-mode .skills .icon-box {
     background-color: var(--default-color);
     text-align: center;
     padding: 40px 30px;
     border: 1px solid color-mix(in srgb, var(--dark-mode-contrast-color), transparent 90%);
 }
 
-.dark-mode .why-us .icon-box i {
+.dark-mode .skills .icon-box i {
     color: var(--accent-color);
     font-size: 48px;
     margin-bottom: 30px;
@@ -606,7 +606,7 @@
     transition: 0.3s;
 }
 
-.dark-mode .why-us .icon-box h4 {
+.dark-mode .skills .icon-box h4 {
     font-size: 20px;
     font-weight: 500;
     margin: 0 0 30px 0;
@@ -614,20 +614,20 @@
     color: var(--nav-dropdown-background-color);
 }
 
-.dark-mode .why-us .icon-box p {
+.dark-mode .skills .icon-box p {
     font-size: 15px;
     color: color-mix(in srgb, var(--background-color), transparent 30%);
 }
 
-.dark-mode .why-us .icon-box:hover i {
+.dark-mode .skills .icon-box:hover i {
     color: var(--contrast-color);
     background: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
-# Dark Mode skills Section
+# Dark Mode projects Section
 --------------------------------------------------------------*/
-.dark-mode .skills .team-member {
+.dark-mode .projects .team-member {
     box-shadow: 0px 0 30px color-mix(in srgb, var(--accent-color), transparent 80%);
     overflow: hidden;
     text-align: center;
@@ -635,7 +635,7 @@
     transition: 0.3s;
 }
 
-.dark-mode .skills .team-member .member-img:after {
+.dark-mode .projects .team-member .member-img:after {
     position: absolute;
     content: "";
     left: -1px;
@@ -647,7 +647,7 @@
     z-index: 1;
 }
 
-.dark-mode .skills .team-member .social {
+.dark-mode .projects .team-member .social {
     position: absolute;
     right: -100%;
     top: 30px;
@@ -658,7 +658,7 @@
     z-index: 2;
 }
 
-.dark-mode .skills .team-member .social a {
+.dark-mode .projects .team-member .social a {
     transition: color 0.3s;
     color: color-mix(in srgb, var(--background-color), transparent 50%);
     margin: 15px 12px;
@@ -667,22 +667,22 @@
     text-align: center;
 }
 
-.dark-mode .skills .team-member .social a:hover {
+.dark-mode .projects .team-member .social a:hover {
     color: var(--background-color);
 }
 
-.skills .team-member .member-info {
+.projects .team-member .member-info {
     padding: 10px 15px 20px 15px;
 }
 
-.dark-mode .skills .team-member .member-info span {
+.dark-mode .projects .team-member .member-info span {
     display: block;
     font-size: 14px;
     font-weight: 400;
     color: color-mix(in srgb, var(--background-color), transparent 50%);
 }
 
-.dark-mode .skills .team-member .member-info p {
+.dark-mode .projects .team-member .member-info p {
     font-style: italic;
     font-size: 14px;
     padding-top: 15px;
@@ -690,12 +690,12 @@
     color: color-mix(in srgb, var(--background-color), transparent 30%);
 }
 
-.dark-mode .skills .team-member:hover {
+.dark-mode .projects .team-member:hover {
     transform: scale(1.08);
     box-shadow: 0px 0 30px color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-.skills .team-member:hover .social {
+.projects .team-member:hover .social {
     right: 8px;
     opacity: 1;
 }
@@ -761,17 +761,4 @@
     100% {
         transform: rotate(360deg);
     }
-}
-
-.dark-mode .language-button-class {
-    font-size: 15px;
-    text-transform: none;
-    color: var(--nav-dropdown-background-color);
-    border-color: transparent;
-    background-color: transparent;
-}
-
-.dark-mode .language-button-class:hover {
-    color: var(--accent-color);
-    transition: all 0.3s ease-in-out 0s;
 }
